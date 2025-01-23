@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeBox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="/">SafeBox</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active font-weight-bold" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="/aes">AES Demo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h3 class="text-center mb-4">Simpan File dengan Aman Menggunakan Enkripsi Hybrid AES & RSA</h1>
+        <p class="text-center">Anggota Kelompok: IRSYAD - RAFLY - ALBI - INDRA</p>
+
+        <!-- Upload and Download Section -->
+        <div class="row justify-content-center">
+            <!-- Upload Section -->
+            <div class="col-md-5 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Upload File</h2>
+                        <form id="uploadForm" method="POST" action="/upload" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="file" class="form-label">Select File</label>
+                                <input type="file" class="form-control" id="file" name="file" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Upload</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Section -->
+            <div class="col-md-5 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Download File</h2>
+                        <form id="downloadForm" method="POST" action="/download" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="filename" class="form-label">Filename</label>
+                                <input type="text" class="form-control" id="filename" name="filename" placeholder="Enter the file name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="private_key" class="form-label">Private Key (.pem)</label>
+                                <input type="file" class="form-control" id="private_key" name="private_key" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100">Download</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button to AES Demo -->
+        <div class="text-center">
+            <a href="/aes" class="btn btn-warning btn-lg">Coba AES Murni</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2025 SafeBox. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
