@@ -1,0 +1,856 @@
+2025-01-24 08:59:15,146 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-24 08:59:15,147 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-24 08:59:15,150 - INFO -  * Restarting with stat
+2025-01-24 08:59:15,835 - WARNING -  * Debugger is active!
+2025-01-24 08:59:15,840 - INFO -  * Debugger PIN: 576-265-529
+2025-01-24 08:59:19,042 - INFO - Mengakses halaman utama.
+2025-01-24 08:59:19,048 - INFO - 127.0.0.1 - - [24/Jan/2025 08:59:19] "GET / HTTP/1.1" 200 -
+2025-01-24 08:59:19,282 - INFO - 127.0.0.1 - - [24/Jan/2025 08:59:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 08:59:19,341 - INFO - 127.0.0.1 - - [24/Jan/2025 08:59:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-24 08:59:35,279 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6177.96 MB
+2025-01-24 08:59:35,289 - INFO - Nama file baru yang dihasilkan: fileMP4-size1mbJ2rodMZ.mp4
+2025-01-24 08:59:35,290 - INFO - Ukuran file pengguna sebelum enkripsi: 1048576 bytes
+2025-01-24 08:59:35,291 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 08:59:35,292 - INFO - Melakukan enkripsi AES
+2025-01-24 08:59:35,314 - DEBUG - Enkripsi AES selesai.
+2025-01-24 08:59:35,317 - INFO - File terenkripsi disimpan di: uploads\fileMP4-size1mbJ2rodMZ.mp4
+2025-01-24 08:59:35,318 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 08:59:35,362 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 08:59:35,368 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 08:59:35,368 - INFO - Melakukan hash pada password...
+2025-01-24 08:59:35,369 - DEBUG - Password berhasil di-hash
+2025-01-24 08:59:35,369 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 08:59:35,369 - INFO - Melakukan enkripsi AES
+2025-01-24 08:59:35,370 - DEBUG - Enkripsi AES selesai.
+2025-01-24 08:59:35,372 - INFO - File .key terenkripsi disimpan di: uploads\fileMP4-size1mbJ2rodMZ.mp4.key
+2025-01-24 08:59:35,372 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.099100 detik
+2025-01-24 08:59:35,379 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 2.00% | RAM: 6178.97 MB
+2025-01-24 08:59:35,384 - INFO - 127.0.0.1 - - [24/Jan/2025 08:59:35] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 08:59:35,392 - INFO - Menampilkan halaman sukses.
+2025-01-24 08:59:35,449 - INFO - 127.0.0.1 - - [24/Jan/2025 08:59:35] "GET /success HTTP/1.1" 200 -
+2025-01-24 08:59:39,675 - INFO - Mengunduh private key...
+2025-01-24 08:59:39,675 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 08:59:39,700 - INFO - 127.0.0.1 - - [24/Jan/2025 08:59:39] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 08:59:41,800 - INFO - Mengakses halaman utama.
+2025-01-24 08:59:41,801 - INFO - 127.0.0.1 - - [24/Jan/2025 08:59:41] "GET / HTTP/1.1" 200 -
+2025-01-24 08:59:41,833 - INFO - 127.0.0.1 - - [24/Jan/2025 08:59:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 08:59:56,181 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6135.73 MB
+2025-01-24 08:59:56,249 - INFO - Melakukan hash pada password...
+2025-01-24 08:59:56,250 - DEBUG - Password berhasil di-hash
+2025-01-24 08:59:56,264 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 08:59:56,264 - INFO - Melakukan dekripsi AES
+2025-01-24 08:59:56,264 - DEBUG - Dekripsi AES selesai.
+2025-01-24 08:59:56,265 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 08:59:56,267 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 08:59:56,268 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 08:59:56,281 - INFO - Ukuran file pengguna sebelum dekripsi: 1048592 bytes
+2025-01-24 08:59:56,281 - INFO - Melakukan dekripsi AES
+2025-01-24 08:59:56,286 - DEBUG - Dekripsi AES selesai.
+2025-01-24 08:59:56,286 - INFO - /download selesai. Waktu yang dibutuhkan: 0.113104 detik
+2025-01-24 08:59:56,292 - INFO - decrypt & download sukses, route /download selesai | CPU: 7.80% | RAM: 6135.66 MB
+2025-01-24 08:59:56,297 - INFO - 127.0.0.1 - - [24/Jan/2025 08:59:56] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:00:13,672 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6084.85 MB
+2025-01-24 09:00:13,693 - INFO - Nama file baru yang dihasilkan: fileMP4-size5mbpJJhMD4.mp4
+2025-01-24 09:00:13,695 - INFO - Ukuran file pengguna sebelum enkripsi: 5242880 bytes
+2025-01-24 09:00:13,695 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:00:13,698 - INFO - Melakukan enkripsi AES
+2025-01-24 09:00:13,719 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:00:13,724 - INFO - File terenkripsi disimpan di: uploads\fileMP4-size5mbpJJhMD4.mp4
+2025-01-24 09:00:13,725 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:00:13,826 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:00:13,827 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:00:13,828 - INFO - Melakukan hash pada password...
+2025-01-24 09:00:13,828 - DEBUG - Password berhasil di-hash
+2025-01-24 09:00:13,829 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:00:13,829 - INFO - Melakukan enkripsi AES
+2025-01-24 09:00:13,829 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:00:13,831 - INFO - File .key terenkripsi disimpan di: uploads\fileMP4-size5mbpJJhMD4.mp4.key
+2025-01-24 09:00:13,831 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.166617 detik
+2025-01-24 09:00:13,837 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 9.60% | RAM: 6098.27 MB
+2025-01-24 09:00:13,844 - INFO - 127.0.0.1 - - [24/Jan/2025 09:00:13] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:00:13,850 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:00:13,851 - INFO - 127.0.0.1 - - [24/Jan/2025 09:00:13] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:00:17,937 - INFO - Mengunduh private key...
+2025-01-24 09:00:17,937 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:00:17,956 - INFO - 127.0.0.1 - - [24/Jan/2025 09:00:17] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:00:19,910 - INFO - Mengakses halaman utama.
+2025-01-24 09:00:19,911 - INFO - 127.0.0.1 - - [24/Jan/2025 09:00:19] "GET / HTTP/1.1" 200 -
+2025-01-24 09:00:19,929 - INFO - 127.0.0.1 - - [24/Jan/2025 09:00:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:01:05,423 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6080.27 MB
+2025-01-24 09:01:05,488 - INFO - Melakukan hash pada password...
+2025-01-24 09:01:05,488 - DEBUG - Password berhasil di-hash
+2025-01-24 09:01:05,499 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:01:05,499 - INFO - Melakukan dekripsi AES
+2025-01-24 09:01:05,499 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:01:05,500 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:01:05,502 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:01:05,503 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:01:05,518 - INFO - Ukuran file pengguna sebelum dekripsi: 5242896 bytes
+2025-01-24 09:01:05,519 - INFO - Melakukan dekripsi AES
+2025-01-24 09:01:05,537 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:01:05,538 - INFO - /download selesai. Waktu yang dibutuhkan: 0.124857 detik
+2025-01-24 09:01:05,544 - INFO - decrypt & download sukses, route /download selesai | CPU: 1.50% | RAM: 6089.37 MB
+2025-01-24 09:01:05,561 - INFO - 127.0.0.1 - - [24/Jan/2025 09:01:05] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:01:23,468 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6077.62 MB
+2025-01-24 09:01:23,499 - INFO - Nama file baru yang dihasilkan: fileMP4-size10mbNBqkqTu.mp4
+2025-01-24 09:01:23,500 - INFO - Ukuran file pengguna sebelum enkripsi: 10485760 bytes
+2025-01-24 09:01:23,501 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:01:23,506 - INFO - Melakukan enkripsi AES
+2025-01-24 09:01:23,541 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:01:23,552 - INFO - File terenkripsi disimpan di: uploads\fileMP4-size10mbNBqkqTu.mp4
+2025-01-24 09:01:23,553 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:01:23,646 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:01:23,647 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:01:23,647 - INFO - Melakukan hash pada password...
+2025-01-24 09:01:23,648 - DEBUG - Password berhasil di-hash
+2025-01-24 09:01:23,649 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:01:23,649 - INFO - Melakukan enkripsi AES
+2025-01-24 09:01:23,650 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:01:23,652 - INFO - File .key terenkripsi disimpan di: uploads\fileMP4-size10mbNBqkqTu.mp4.key
+2025-01-24 09:01:23,653 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.192973 detik
+2025-01-24 09:01:23,660 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 3.20% | RAM: 6094.40 MB
+2025-01-24 09:01:23,678 - INFO - 127.0.0.1 - - [24/Jan/2025 09:01:23] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:01:23,684 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:01:23,686 - INFO - 127.0.0.1 - - [24/Jan/2025 09:01:23] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:01:26,928 - INFO - Mengunduh private key...
+2025-01-24 09:01:26,929 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:01:26,948 - INFO - 127.0.0.1 - - [24/Jan/2025 09:01:26] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:01:28,300 - INFO - Mengakses halaman utama.
+2025-01-24 09:01:28,301 - INFO - 127.0.0.1 - - [24/Jan/2025 09:01:28] "GET / HTTP/1.1" 200 -
+2025-01-24 09:01:28,320 - INFO - 127.0.0.1 - - [24/Jan/2025 09:01:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:01:47,407 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6072.07 MB
+2025-01-24 09:01:47,473 - INFO - Melakukan hash pada password...
+2025-01-24 09:01:47,473 - DEBUG - Password berhasil di-hash
+2025-01-24 09:01:47,485 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:01:47,485 - INFO - Melakukan dekripsi AES
+2025-01-24 09:01:47,486 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:01:47,486 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:01:47,489 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:01:47,489 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:01:47,510 - INFO - Ukuran file pengguna sebelum dekripsi: 10485776 bytes
+2025-01-24 09:01:47,510 - INFO - Melakukan dekripsi AES
+2025-01-24 09:01:47,543 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:01:47,544 - INFO - /download selesai. Waktu yang dibutuhkan: 0.142149 detik
+2025-01-24 09:01:47,550 - INFO - decrypt & download sukses, route /download selesai | CPU: 0.00% | RAM: 6091.17 MB
+2025-01-24 09:01:47,553 - INFO - 127.0.0.1 - - [24/Jan/2025 09:01:47] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:02:16,840 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6042.23 MB
+2025-01-24 09:02:17,149 - INFO - Nama file baru yang dihasilkan: fileMP4-size100mbeLKurCG.mp4
+2025-01-24 09:02:17,149 - INFO - Ukuran file pengguna sebelum enkripsi: 104857600 bytes
+2025-01-24 09:02:17,150 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:02:17,198 - INFO - Melakukan enkripsi AES
+2025-01-24 09:02:17,515 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:02:17,814 - INFO - File terenkripsi disimpan di: uploads\fileMP4-size100mbeLKurCG.mp4
+2025-01-24 09:02:17,815 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:02:17,865 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:02:17,866 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:02:17,866 - INFO - Melakukan hash pada password...
+2025-01-24 09:02:17,867 - DEBUG - Password berhasil di-hash
+2025-01-24 09:02:17,867 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:02:17,867 - INFO - Melakukan enkripsi AES
+2025-01-24 09:02:17,868 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:02:17,869 - INFO - File .key terenkripsi disimpan di: uploads\fileMP4-size100mbeLKurCG.mp4.key
+2025-01-24 09:02:17,870 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 1.037958 detik
+2025-01-24 09:02:17,879 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 5.40% | RAM: 6239.38 MB
+2025-01-24 09:02:17,899 - INFO - 127.0.0.1 - - [24/Jan/2025 09:02:17] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:02:17,906 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:02:17,907 - INFO - 127.0.0.1 - - [24/Jan/2025 09:02:17] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:02:21,284 - INFO - Mengunduh private key...
+2025-01-24 09:02:21,285 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:02:21,302 - INFO - 127.0.0.1 - - [24/Jan/2025 09:02:21] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:02:22,893 - INFO - Mengakses halaman utama.
+2025-01-24 09:02:22,895 - INFO - 127.0.0.1 - - [24/Jan/2025 09:02:22] "GET / HTTP/1.1" 200 -
+2025-01-24 09:02:22,906 - INFO - 127.0.0.1 - - [24/Jan/2025 09:02:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:02:39,576 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6049.55 MB
+2025-01-24 09:02:39,645 - INFO - Melakukan hash pada password...
+2025-01-24 09:02:39,645 - DEBUG - Password berhasil di-hash
+2025-01-24 09:02:39,664 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:02:39,665 - INFO - Melakukan dekripsi AES
+2025-01-24 09:02:39,665 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:02:39,666 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:02:39,668 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:02:39,669 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:02:39,724 - INFO - Ukuran file pengguna sebelum dekripsi: 104857616 bytes
+2025-01-24 09:02:39,725 - INFO - Melakukan dekripsi AES
+2025-01-24 09:02:40,030 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:02:40,031 - INFO - /download selesai. Waktu yang dibutuhkan: 0.460720 detik
+2025-01-24 09:02:40,037 - INFO - decrypt & download sukses, route /download selesai | CPU: 10.30% | RAM: 6248.00 MB
+2025-01-24 09:02:40,047 - INFO - 127.0.0.1 - - [24/Jan/2025 09:02:40] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:03:23,587 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6061.63 MB
+2025-01-24 09:03:23,594 - INFO - Nama file baru yang dihasilkan: filePDF-size1mb6eixZfo.pdf
+2025-01-24 09:03:23,595 - INFO - Ukuran file pengguna sebelum enkripsi: 1048576 bytes
+2025-01-24 09:03:23,595 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:03:23,597 - INFO - Melakukan enkripsi AES
+2025-01-24 09:03:23,602 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:03:23,604 - INFO - File terenkripsi disimpan di: uploads\filePDF-size1mb6eixZfo.pdf
+2025-01-24 09:03:23,605 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:03:23,696 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:03:23,697 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:03:23,697 - INFO - Melakukan hash pada password...
+2025-01-24 09:03:23,698 - DEBUG - Password berhasil di-hash
+2025-01-24 09:03:23,698 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:03:23,699 - INFO - Melakukan enkripsi AES
+2025-01-24 09:03:23,701 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:03:23,703 - INFO - File .key terenkripsi disimpan di: uploads\filePDF-size1mb6eixZfo.pdf.key
+2025-01-24 09:03:23,704 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.124280 detik
+2025-01-24 09:03:23,710 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 9.40% | RAM: 6062.03 MB
+2025-01-24 09:03:23,714 - INFO - 127.0.0.1 - - [24/Jan/2025 09:03:23] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:03:23,722 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:03:23,724 - INFO - 127.0.0.1 - - [24/Jan/2025 09:03:23] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:03:29,509 - INFO - Mengunduh private key...
+2025-01-24 09:03:29,510 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:03:29,534 - INFO - 127.0.0.1 - - [24/Jan/2025 09:03:29] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:03:31,656 - INFO - Mengakses halaman utama.
+2025-01-24 09:03:31,658 - INFO - 127.0.0.1 - - [24/Jan/2025 09:03:31] "GET / HTTP/1.1" 200 -
+2025-01-24 09:03:31,674 - INFO - 127.0.0.1 - - [24/Jan/2025 09:03:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:03:47,534 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6086.62 MB
+2025-01-24 09:03:47,607 - INFO - Melakukan hash pada password...
+2025-01-24 09:03:47,608 - DEBUG - Password berhasil di-hash
+2025-01-24 09:03:47,621 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:03:47,621 - INFO - Melakukan dekripsi AES
+2025-01-24 09:03:47,622 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:03:47,622 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:03:47,625 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:03:47,626 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:03:47,640 - INFO - Ukuran file pengguna sebelum dekripsi: 1048592 bytes
+2025-01-24 09:03:47,640 - INFO - Melakukan dekripsi AES
+2025-01-24 09:03:47,645 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:03:47,645 - INFO - /download selesai. Waktu yang dibutuhkan: 0.118801 detik
+2025-01-24 09:03:47,654 - INFO - decrypt & download sukses, route /download selesai | CPU: 11.30% | RAM: 6084.70 MB
+2025-01-24 09:03:47,656 - INFO - 127.0.0.1 - - [24/Jan/2025 09:03:47] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:04:12,034 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6048.30 MB
+2025-01-24 09:04:12,052 - INFO - Nama file baru yang dihasilkan: filePDF-size5mbLyyW1h3.pdf
+2025-01-24 09:04:12,052 - INFO - Ukuran file pengguna sebelum enkripsi: 5242880 bytes
+2025-01-24 09:04:12,053 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:04:12,056 - INFO - Melakukan enkripsi AES
+2025-01-24 09:04:12,073 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:04:12,078 - INFO - File terenkripsi disimpan di: uploads\filePDF-size5mbLyyW1h3.pdf
+2025-01-24 09:04:12,080 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:04:12,165 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:04:12,166 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:04:12,166 - INFO - Melakukan hash pada password...
+2025-01-24 09:04:12,167 - DEBUG - Password berhasil di-hash
+2025-01-24 09:04:12,168 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:04:12,168 - INFO - Melakukan enkripsi AES
+2025-01-24 09:04:12,168 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:04:12,170 - INFO - File .key terenkripsi disimpan di: uploads\filePDF-size5mbLyyW1h3.pdf.key
+2025-01-24 09:04:12,170 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.143970 detik
+2025-01-24 09:04:12,176 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 13.90% | RAM: 6054.39 MB
+2025-01-24 09:04:12,181 - INFO - 127.0.0.1 - - [24/Jan/2025 09:04:12] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:04:12,213 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:04:12,214 - INFO - 127.0.0.1 - - [24/Jan/2025 09:04:12] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:04:15,875 - INFO - Mengunduh private key...
+2025-01-24 09:04:15,876 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:04:15,897 - INFO - 127.0.0.1 - - [24/Jan/2025 09:04:15] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:04:18,816 - INFO - Mengakses halaman utama.
+2025-01-24 09:04:18,817 - INFO - 127.0.0.1 - - [24/Jan/2025 09:04:18] "GET / HTTP/1.1" 200 -
+2025-01-24 09:04:18,832 - INFO - 127.0.0.1 - - [24/Jan/2025 09:04:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:04:34,253 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6086.29 MB
+2025-01-24 09:04:34,320 - INFO - Melakukan hash pada password...
+2025-01-24 09:04:34,321 - DEBUG - Password berhasil di-hash
+2025-01-24 09:04:34,333 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:04:34,333 - INFO - Melakukan dekripsi AES
+2025-01-24 09:04:34,334 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:04:34,335 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:04:34,337 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:04:34,338 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:04:34,354 - INFO - Ukuran file pengguna sebelum dekripsi: 5242896 bytes
+2025-01-24 09:04:34,354 - INFO - Melakukan dekripsi AES
+2025-01-24 09:04:34,372 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:04:34,373 - INFO - /download selesai. Waktu yang dibutuhkan: 0.125749 detik
+2025-01-24 09:04:34,381 - INFO - decrypt & download sukses, route /download selesai | CPU: 6.60% | RAM: 6094.00 MB
+2025-01-24 09:04:34,384 - INFO - 127.0.0.1 - - [24/Jan/2025 09:04:34] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:05:01,776 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6130.49 MB
+2025-01-24 09:05:01,813 - INFO - Nama file baru yang dihasilkan: filePDF-size10mbb38iJfe.pdf
+2025-01-24 09:05:01,814 - INFO - Ukuran file pengguna sebelum enkripsi: 10485760 bytes
+2025-01-24 09:05:01,814 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:05:01,819 - INFO - Melakukan enkripsi AES
+2025-01-24 09:05:01,852 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:05:01,861 - INFO - File terenkripsi disimpan di: uploads\filePDF-size10mbb38iJfe.pdf
+2025-01-24 09:05:01,862 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:05:01,963 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:05:01,965 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:05:01,965 - INFO - Melakukan hash pada password...
+2025-01-24 09:05:01,965 - DEBUG - Password berhasil di-hash
+2025-01-24 09:05:01,966 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:05:01,966 - INFO - Melakukan enkripsi AES
+2025-01-24 09:05:01,967 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:05:01,968 - INFO - File .key terenkripsi disimpan di: uploads\filePDF-size10mbb38iJfe.pdf.key
+2025-01-24 09:05:01,969 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.204303 detik
+2025-01-24 09:05:01,978 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 3.70% | RAM: 6173.58 MB
+2025-01-24 09:05:01,984 - INFO - 127.0.0.1 - - [24/Jan/2025 09:05:01] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:05:01,991 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:05:01,993 - INFO - 127.0.0.1 - - [24/Jan/2025 09:05:01] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:05:06,869 - INFO - Mengunduh private key...
+2025-01-24 09:05:06,870 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:05:06,890 - INFO - 127.0.0.1 - - [24/Jan/2025 09:05:06] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:05:09,212 - INFO - Mengakses halaman utama.
+2025-01-24 09:05:09,215 - INFO - 127.0.0.1 - - [24/Jan/2025 09:05:09] "GET / HTTP/1.1" 200 -
+2025-01-24 09:05:09,238 - INFO - 127.0.0.1 - - [24/Jan/2025 09:05:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:05:25,204 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6067.38 MB
+2025-01-24 09:05:25,270 - INFO - Melakukan hash pada password...
+2025-01-24 09:05:25,270 - DEBUG - Password berhasil di-hash
+2025-01-24 09:05:25,280 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:05:25,281 - INFO - Melakukan dekripsi AES
+2025-01-24 09:05:25,281 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:05:25,282 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:05:25,285 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:05:25,286 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:05:25,304 - INFO - Ukuran file pengguna sebelum dekripsi: 10485776 bytes
+2025-01-24 09:05:25,305 - INFO - Melakukan dekripsi AES
+2025-01-24 09:05:25,339 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:05:25,339 - INFO - /download selesai. Waktu yang dibutuhkan: 0.146079 detik
+2025-01-24 09:05:25,345 - INFO - decrypt & download sukses, route /download selesai | CPU: 6.80% | RAM: 6085.74 MB
+2025-01-24 09:05:25,348 - INFO - 127.0.0.1 - - [24/Jan/2025 09:05:25] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:05:44,310 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6054.90 MB
+2025-01-24 09:05:44,610 - INFO - Nama file baru yang dihasilkan: filePDF-size100mbvJjnADO.pdf
+2025-01-24 09:05:44,610 - INFO - Ukuran file pengguna sebelum enkripsi: 104857600 bytes
+2025-01-24 09:05:44,611 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:05:44,659 - INFO - Melakukan enkripsi AES
+2025-01-24 09:05:44,974 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:05:45,272 - INFO - File terenkripsi disimpan di: uploads\filePDF-size100mbvJjnADO.pdf
+2025-01-24 09:05:45,273 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:05:45,378 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:05:45,379 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:05:45,379 - INFO - Melakukan hash pada password...
+2025-01-24 09:05:45,380 - DEBUG - Password berhasil di-hash
+2025-01-24 09:05:45,380 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:05:45,380 - INFO - Melakukan enkripsi AES
+2025-01-24 09:05:45,381 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:05:45,384 - INFO - File .key terenkripsi disimpan di: uploads\filePDF-size100mbvJjnADO.pdf.key
+2025-01-24 09:05:45,385 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 1.082765 detik
+2025-01-24 09:05:45,393 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 4.50% | RAM: 6239.90 MB
+2025-01-24 09:05:45,418 - INFO - 127.0.0.1 - - [24/Jan/2025 09:05:45] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:05:45,424 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:05:45,426 - INFO - 127.0.0.1 - - [24/Jan/2025 09:05:45] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:05:55,503 - INFO - Mengunduh private key...
+2025-01-24 09:05:55,504 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:05:55,523 - INFO - 127.0.0.1 - - [24/Jan/2025 09:05:55] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:05:58,336 - INFO - Mengakses halaman utama.
+2025-01-24 09:05:58,337 - INFO - 127.0.0.1 - - [24/Jan/2025 09:05:58] "GET / HTTP/1.1" 200 -
+2025-01-24 09:05:58,349 - INFO - 127.0.0.1 - - [24/Jan/2025 09:05:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:06:21,620 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6050.56 MB
+2025-01-24 09:06:21,683 - INFO - Melakukan hash pada password...
+2025-01-24 09:06:21,683 - DEBUG - Password berhasil di-hash
+2025-01-24 09:06:21,697 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:06:21,698 - INFO - Melakukan dekripsi AES
+2025-01-24 09:06:21,698 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:06:21,698 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:06:21,701 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:06:21,702 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:06:21,759 - INFO - Ukuran file pengguna sebelum dekripsi: 104857616 bytes
+2025-01-24 09:06:21,760 - INFO - Melakukan dekripsi AES
+2025-01-24 09:06:22,103 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:06:22,103 - INFO - /download selesai. Waktu yang dibutuhkan: 0.491343 detik
+2025-01-24 09:06:22,109 - INFO - decrypt & download sukses, route /download selesai | CPU: 7.00% | RAM: 6257.91 MB
+2025-01-24 09:06:22,119 - INFO - 127.0.0.1 - - [24/Jan/2025 09:06:22] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:07:04,272 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6134.91 MB
+2025-01-24 09:07:04,278 - INFO - Nama file baru yang dihasilkan: filePNG-size1mbE8rcR1y.png
+2025-01-24 09:07:04,279 - INFO - Ukuran file pengguna sebelum enkripsi: 1048576 bytes
+2025-01-24 09:07:04,279 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:07:04,280 - INFO - Melakukan enkripsi AES
+2025-01-24 09:07:04,284 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:07:04,287 - INFO - File terenkripsi disimpan di: uploads\filePNG-size1mbE8rcR1y.png
+2025-01-24 09:07:04,288 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:07:04,332 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:07:04,333 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:07:04,333 - INFO - Melakukan hash pada password...
+2025-01-24 09:07:04,334 - DEBUG - Password berhasil di-hash
+2025-01-24 09:07:04,334 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:07:04,334 - INFO - Melakukan enkripsi AES
+2025-01-24 09:07:04,335 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:07:04,338 - INFO - File .key terenkripsi disimpan di: uploads\filePNG-size1mbE8rcR1y.png.key
+2025-01-24 09:07:04,341 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.075984 detik
+2025-01-24 09:07:04,348 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 2.40% | RAM: 6137.77 MB
+2025-01-24 09:07:04,352 - INFO - 127.0.0.1 - - [24/Jan/2025 09:07:04] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:07:04,359 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:07:04,361 - INFO - 127.0.0.1 - - [24/Jan/2025 09:07:04] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:07:09,102 - INFO - Mengunduh private key...
+2025-01-24 09:07:09,103 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:07:09,124 - INFO - 127.0.0.1 - - [24/Jan/2025 09:07:09] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:07:10,945 - INFO - Mengakses halaman utama.
+2025-01-24 09:07:10,946 - INFO - 127.0.0.1 - - [24/Jan/2025 09:07:10] "GET / HTTP/1.1" 200 -
+2025-01-24 09:07:10,967 - INFO - 127.0.0.1 - - [24/Jan/2025 09:07:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:07:28,584 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6133.96 MB
+2025-01-24 09:07:28,656 - INFO - Melakukan hash pada password...
+2025-01-24 09:07:28,657 - DEBUG - Password berhasil di-hash
+2025-01-24 09:07:28,670 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:07:28,670 - INFO - Melakukan dekripsi AES
+2025-01-24 09:07:28,671 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:07:28,671 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:07:28,674 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:07:28,674 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:07:28,690 - INFO - Ukuran file pengguna sebelum dekripsi: 1048592 bytes
+2025-01-24 09:07:28,690 - INFO - Melakukan dekripsi AES
+2025-01-24 09:07:28,694 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:07:28,695 - INFO - /download selesai. Waktu yang dibutuhkan: 0.118697 detik
+2025-01-24 09:07:28,701 - INFO - decrypt & download sukses, route /download selesai | CPU: 0.00% | RAM: 6130.49 MB
+2025-01-24 09:07:28,705 - INFO - 127.0.0.1 - - [24/Jan/2025 09:07:28] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:07:58,225 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6129.54 MB
+2025-01-24 09:07:58,247 - INFO - Nama file baru yang dihasilkan: filePNG-size5mbp1Bomzw.png
+2025-01-24 09:07:58,248 - INFO - Ukuran file pengguna sebelum enkripsi: 5242880 bytes
+2025-01-24 09:07:58,249 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:07:58,253 - INFO - Melakukan enkripsi AES
+2025-01-24 09:07:58,271 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:07:58,275 - INFO - File terenkripsi disimpan di: uploads\filePNG-size5mbp1Bomzw.png
+2025-01-24 09:07:58,277 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:07:58,340 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:07:58,341 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:07:58,342 - INFO - Melakukan hash pada password...
+2025-01-24 09:07:58,342 - DEBUG - Password berhasil di-hash
+2025-01-24 09:07:58,342 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:07:58,343 - INFO - Melakukan enkripsi AES
+2025-01-24 09:07:58,344 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:07:58,345 - INFO - File .key terenkripsi disimpan di: uploads\filePNG-size5mbp1Bomzw.png.key
+2025-01-24 09:07:58,346 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.128545 detik
+2025-01-24 09:07:58,354 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 14.30% | RAM: 6139.79 MB
+2025-01-24 09:07:58,358 - INFO - 127.0.0.1 - - [24/Jan/2025 09:07:58] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:07:58,366 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:07:58,367 - INFO - 127.0.0.1 - - [24/Jan/2025 09:07:58] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:08:01,601 - INFO - Mengunduh private key...
+2025-01-24 09:08:01,602 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:08:01,624 - INFO - 127.0.0.1 - - [24/Jan/2025 09:08:01] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:08:03,316 - INFO - Mengakses halaman utama.
+2025-01-24 09:08:03,317 - INFO - 127.0.0.1 - - [24/Jan/2025 09:08:03] "GET / HTTP/1.1" 200 -
+2025-01-24 09:08:03,341 - INFO - 127.0.0.1 - - [24/Jan/2025 09:08:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:08:24,799 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6042.70 MB
+2025-01-24 09:08:24,872 - INFO - Melakukan hash pada password...
+2025-01-24 09:08:24,872 - DEBUG - Password berhasil di-hash
+2025-01-24 09:08:24,886 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:08:24,886 - INFO - Melakukan dekripsi AES
+2025-01-24 09:08:24,887 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:08:24,887 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:08:24,889 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:08:24,889 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:08:24,905 - INFO - Ukuran file pengguna sebelum dekripsi: 5242896 bytes
+2025-01-24 09:08:24,905 - INFO - Melakukan dekripsi AES
+2025-01-24 09:08:24,922 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:08:24,923 - INFO - /download selesai. Waktu yang dibutuhkan: 0.135354 detik
+2025-01-24 09:08:24,929 - INFO - decrypt & download sukses, route /download selesai | CPU: 11.80% | RAM: 6052.85 MB
+2025-01-24 09:08:24,931 - INFO - 127.0.0.1 - - [24/Jan/2025 09:08:24] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:08:58,033 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6033.38 MB
+2025-01-24 09:08:58,068 - INFO - Nama file baru yang dihasilkan: filePNG-size10mbmtiDVtz.png
+2025-01-24 09:08:58,069 - INFO - Ukuran file pengguna sebelum enkripsi: 10485760 bytes
+2025-01-24 09:08:58,069 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:08:58,075 - INFO - Melakukan enkripsi AES
+2025-01-24 09:08:58,109 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:08:58,117 - INFO - File terenkripsi disimpan di: uploads\filePNG-size10mbmtiDVtz.png
+2025-01-24 09:08:58,118 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:08:58,177 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:08:58,178 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:08:58,179 - INFO - Melakukan hash pada password...
+2025-01-24 09:08:58,179 - DEBUG - Password berhasil di-hash
+2025-01-24 09:08:58,180 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:08:58,180 - INFO - Melakukan enkripsi AES
+2025-01-24 09:08:58,180 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:08:58,182 - INFO - File .key terenkripsi disimpan di: uploads\filePNG-size10mbmtiDVtz.png.key
+2025-01-24 09:08:58,183 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.157991 detik
+2025-01-24 09:08:58,194 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 3.70% | RAM: 6044.20 MB
+2025-01-24 09:08:58,200 - INFO - 127.0.0.1 - - [24/Jan/2025 09:08:58] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:08:58,206 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:08:58,207 - INFO - 127.0.0.1 - - [24/Jan/2025 09:08:58] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:09:03,796 - INFO - Mengunduh private key...
+2025-01-24 09:09:03,797 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:09:03,824 - INFO - 127.0.0.1 - - [24/Jan/2025 09:09:03] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:09:06,211 - INFO - Mengakses halaman utama.
+2025-01-24 09:09:06,213 - INFO - 127.0.0.1 - - [24/Jan/2025 09:09:06] "GET / HTTP/1.1" 200 -
+2025-01-24 09:09:06,234 - INFO - 127.0.0.1 - - [24/Jan/2025 09:09:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:09:24,495 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6050.53 MB
+2025-01-24 09:09:24,556 - INFO - Melakukan hash pada password...
+2025-01-24 09:09:24,557 - DEBUG - Password berhasil di-hash
+2025-01-24 09:09:24,567 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:09:24,568 - INFO - Melakukan dekripsi AES
+2025-01-24 09:09:24,569 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:09:24,570 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:09:24,572 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:09:24,572 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:09:24,589 - INFO - Ukuran file pengguna sebelum dekripsi: 10485776 bytes
+2025-01-24 09:09:24,590 - INFO - Melakukan dekripsi AES
+2025-01-24 09:09:24,624 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:09:24,624 - INFO - /download selesai. Waktu yang dibutuhkan: 0.135879 detik
+2025-01-24 09:09:24,629 - INFO - decrypt & download sukses, route /download selesai | CPU: 7.40% | RAM: 6069.72 MB
+2025-01-24 09:09:24,632 - INFO - 127.0.0.1 - - [24/Jan/2025 09:09:24] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:09:44,965 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6048.86 MB
+2025-01-24 09:09:45,272 - INFO - Nama file baru yang dihasilkan: filePNG-size100mbo4Aywuw.png
+2025-01-24 09:09:45,273 - INFO - Ukuran file pengguna sebelum enkripsi: 104857600 bytes
+2025-01-24 09:09:45,273 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:09:45,322 - INFO - Melakukan enkripsi AES
+2025-01-24 09:09:45,647 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:09:45,957 - INFO - File terenkripsi disimpan di: uploads\filePNG-size100mbo4Aywuw.png
+2025-01-24 09:09:45,958 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:09:46,037 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:09:46,038 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:09:46,039 - INFO - Melakukan hash pada password...
+2025-01-24 09:09:46,039 - DEBUG - Password berhasil di-hash
+2025-01-24 09:09:46,040 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:09:46,040 - INFO - Melakukan enkripsi AES
+2025-01-24 09:09:46,040 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:09:46,043 - INFO - File .key terenkripsi disimpan di: uploads\filePNG-size100mbo4Aywuw.png.key
+2025-01-24 09:09:46,044 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 1.086244 detik
+2025-01-24 09:09:46,051 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 5.20% | RAM: 6238.56 MB
+2025-01-24 09:09:46,071 - INFO - 127.0.0.1 - - [24/Jan/2025 09:09:46] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:09:46,077 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:09:46,079 - INFO - 127.0.0.1 - - [24/Jan/2025 09:09:46] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:09:49,864 - INFO - Mengunduh private key...
+2025-01-24 09:09:49,866 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:09:49,884 - INFO - 127.0.0.1 - - [24/Jan/2025 09:09:49] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:09:51,640 - INFO - Mengakses halaman utama.
+2025-01-24 09:09:51,641 - INFO - 127.0.0.1 - - [24/Jan/2025 09:09:51] "GET / HTTP/1.1" 200 -
+2025-01-24 09:09:51,661 - INFO - 127.0.0.1 - - [24/Jan/2025 09:09:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:10:08,673 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6047.39 MB
+2025-01-24 09:10:08,740 - INFO - Melakukan hash pada password...
+2025-01-24 09:10:08,740 - DEBUG - Password berhasil di-hash
+2025-01-24 09:10:08,752 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:10:08,753 - INFO - Melakukan dekripsi AES
+2025-01-24 09:10:08,753 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:10:08,753 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:10:08,756 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:10:08,756 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:10:08,816 - INFO - Ukuran file pengguna sebelum dekripsi: 104857616 bytes
+2025-01-24 09:10:08,816 - INFO - Melakukan dekripsi AES
+2025-01-24 09:10:09,157 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:10:09,158 - INFO - /download selesai. Waktu yang dibutuhkan: 0.492269 detik
+2025-01-24 09:10:09,163 - INFO - decrypt & download sukses, route /download selesai | CPU: 7.70% | RAM: 6250.21 MB
+2025-01-24 09:10:09,172 - INFO - 127.0.0.1 - - [24/Jan/2025 09:10:09] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:10:33,596 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6047.74 MB
+2025-01-24 09:10:33,602 - INFO - Nama file baru yang dihasilkan: fileTXT-size1mbyHwABn8.txt
+2025-01-24 09:10:33,603 - INFO - Ukuran file pengguna sebelum enkripsi: 1048576 bytes
+2025-01-24 09:10:33,603 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:10:33,604 - INFO - Melakukan enkripsi AES
+2025-01-24 09:10:33,609 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:10:33,612 - INFO - File terenkripsi disimpan di: uploads\fileTXT-size1mbyHwABn8.txt
+2025-01-24 09:10:33,612 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:10:33,688 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:10:33,689 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:10:33,690 - INFO - Melakukan hash pada password...
+2025-01-24 09:10:33,691 - DEBUG - Password berhasil di-hash
+2025-01-24 09:10:33,693 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:10:33,695 - INFO - Melakukan enkripsi AES
+2025-01-24 09:10:33,695 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:10:33,697 - INFO - File .key terenkripsi disimpan di: uploads\fileTXT-size1mbyHwABn8.txt.key
+2025-01-24 09:10:33,698 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.110445 detik
+2025-01-24 09:10:33,703 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 10.90% | RAM: 6048.68 MB
+2025-01-24 09:10:33,707 - INFO - 127.0.0.1 - - [24/Jan/2025 09:10:33] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:10:33,714 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:10:33,715 - INFO - 127.0.0.1 - - [24/Jan/2025 09:10:33] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:10:37,507 - INFO - Mengunduh private key...
+2025-01-24 09:10:37,509 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:10:37,529 - INFO - 127.0.0.1 - - [24/Jan/2025 09:10:37] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:10:38,911 - INFO - Mengakses halaman utama.
+2025-01-24 09:10:38,912 - INFO - 127.0.0.1 - - [24/Jan/2025 09:10:38] "GET / HTTP/1.1" 200 -
+2025-01-24 09:10:38,929 - INFO - 127.0.0.1 - - [24/Jan/2025 09:10:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:11:00,473 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6042.30 MB
+2025-01-24 09:11:00,549 - INFO - Melakukan hash pada password...
+2025-01-24 09:11:00,550 - DEBUG - Password berhasil di-hash
+2025-01-24 09:11:00,564 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:11:00,564 - INFO - Melakukan dekripsi AES
+2025-01-24 09:11:00,565 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:11:00,565 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:11:00,567 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:11:00,568 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:11:00,582 - INFO - Ukuran file pengguna sebelum dekripsi: 1048592 bytes
+2025-01-24 09:11:00,582 - INFO - Melakukan dekripsi AES
+2025-01-24 09:11:00,586 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:11:00,586 - INFO - /download selesai. Waktu yang dibutuhkan: 0.123808 detik
+2025-01-24 09:11:00,594 - INFO - decrypt & download sukses, route /download selesai | CPU: 4.70% | RAM: 6042.09 MB
+2025-01-24 09:11:00,596 - INFO - 127.0.0.1 - - [24/Jan/2025 09:11:00] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:11:18,476 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6040.02 MB
+2025-01-24 09:11:18,501 - INFO - Nama file baru yang dihasilkan: fileTXT-size5mbphgNkRC.txt
+2025-01-24 09:11:18,501 - INFO - Ukuran file pengguna sebelum enkripsi: 5242880 bytes
+2025-01-24 09:11:18,501 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:11:18,506 - INFO - Melakukan enkripsi AES
+2025-01-24 09:11:18,523 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:11:18,529 - INFO - File terenkripsi disimpan di: uploads\fileTXT-size5mbphgNkRC.txt
+2025-01-24 09:11:18,530 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:11:18,596 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:11:18,596 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:11:18,597 - INFO - Melakukan hash pada password...
+2025-01-24 09:11:18,597 - DEBUG - Password berhasil di-hash
+2025-01-24 09:11:18,598 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:11:18,598 - INFO - Melakukan enkripsi AES
+2025-01-24 09:11:18,598 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:11:18,600 - INFO - File .key terenkripsi disimpan di: uploads\fileTXT-size5mbphgNkRC.txt.key
+2025-01-24 09:11:18,601 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.136251 detik
+2025-01-24 09:11:18,609 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 8.70% | RAM: 6044.92 MB
+2025-01-24 09:11:18,613 - INFO - 127.0.0.1 - - [24/Jan/2025 09:11:18] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:11:18,619 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:11:18,621 - INFO - 127.0.0.1 - - [24/Jan/2025 09:11:18] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:11:22,771 - INFO - Mengunduh private key...
+2025-01-24 09:11:22,772 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:11:22,791 - INFO - 127.0.0.1 - - [24/Jan/2025 09:11:22] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:11:36,211 - INFO - Mengunduh private key...
+2025-01-24 09:11:36,212 - INFO - 127.0.0.1 - - [24/Jan/2025 09:11:36] "[32mPOST /download_key HTTP/1.1[0m" 302 -
+2025-01-24 09:11:36,222 - INFO - Mengakses halaman utama.
+2025-01-24 09:11:36,224 - INFO - 127.0.0.1 - - [24/Jan/2025 09:11:36] "GET / HTTP/1.1" 200 -
+2025-01-24 09:11:36,239 - INFO - 127.0.0.1 - - [24/Jan/2025 09:11:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:11:55,976 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6043.45 MB
+2025-01-24 09:11:56,042 - INFO - Melakukan hash pada password...
+2025-01-24 09:11:56,043 - DEBUG - Password berhasil di-hash
+2025-01-24 09:11:56,054 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:11:56,054 - INFO - Melakukan dekripsi AES
+2025-01-24 09:11:56,055 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:11:56,055 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:11:56,057 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:11:56,057 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:11:56,072 - INFO - Ukuran file pengguna sebelum dekripsi: 5242896 bytes
+2025-01-24 09:11:56,073 - INFO - Melakukan dekripsi AES
+2025-01-24 09:11:56,090 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:11:56,091 - INFO - /download selesai. Waktu yang dibutuhkan: 0.119622 detik
+2025-01-24 09:11:56,096 - INFO - decrypt & download sukses, route /download selesai | CPU: 9.40% | RAM: 6063.03 MB
+2025-01-24 09:11:56,101 - INFO - 127.0.0.1 - - [24/Jan/2025 09:11:56] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:12:20,823 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6041.14 MB
+2025-01-24 09:12:20,869 - INFO - Nama file baru yang dihasilkan: fileTXT-size10mbqrfstWG.txt
+2025-01-24 09:12:20,869 - INFO - Ukuran file pengguna sebelum enkripsi: 10485760 bytes
+2025-01-24 09:12:20,870 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:12:20,874 - INFO - Melakukan enkripsi AES
+2025-01-24 09:12:20,907 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:12:20,917 - INFO - File terenkripsi disimpan di: uploads\fileTXT-size10mbqrfstWG.txt
+2025-01-24 09:12:20,917 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:12:20,939 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:12:20,940 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:12:20,941 - INFO - Melakukan hash pada password...
+2025-01-24 09:12:20,941 - DEBUG - Password berhasil di-hash
+2025-01-24 09:12:20,941 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:12:20,941 - INFO - Melakukan enkripsi AES
+2025-01-24 09:12:20,942 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:12:20,943 - INFO - File .key terenkripsi disimpan di: uploads\fileTXT-size10mbqrfstWG.txt.key
+2025-01-24 09:12:20,944 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.126753 detik
+2025-01-24 09:12:20,954 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 9.20% | RAM: 6061.36 MB
+2025-01-24 09:12:20,959 - INFO - 127.0.0.1 - - [24/Jan/2025 09:12:20] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:12:20,966 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:12:20,967 - INFO - 127.0.0.1 - - [24/Jan/2025 09:12:20] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:12:25,243 - INFO - Mengunduh private key...
+2025-01-24 09:12:25,244 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:12:25,264 - INFO - 127.0.0.1 - - [24/Jan/2025 09:12:25] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:12:28,086 - INFO - Mengakses halaman utama.
+2025-01-24 09:12:28,087 - INFO - 127.0.0.1 - - [24/Jan/2025 09:12:28] "GET / HTTP/1.1" 200 -
+2025-01-24 09:12:28,108 - INFO - 127.0.0.1 - - [24/Jan/2025 09:12:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:12:47,666 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6046.43 MB
+2025-01-24 09:12:47,730 - INFO - Melakukan hash pada password...
+2025-01-24 09:12:47,730 - DEBUG - Password berhasil di-hash
+2025-01-24 09:12:47,741 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:12:47,742 - INFO - Melakukan dekripsi AES
+2025-01-24 09:12:47,742 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:12:47,743 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:12:47,745 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:12:47,746 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:12:47,763 - INFO - Ukuran file pengguna sebelum dekripsi: 10485776 bytes
+2025-01-24 09:12:47,763 - INFO - Melakukan dekripsi AES
+2025-01-24 09:12:47,797 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:12:47,798 - INFO - /download selesai. Waktu yang dibutuhkan: 0.142272 detik
+2025-01-24 09:12:47,803 - INFO - decrypt & download sukses, route /download selesai | CPU: 0.00% | RAM: 6066.53 MB
+2025-01-24 09:12:47,806 - INFO - 127.0.0.1 - - [24/Jan/2025 09:12:47] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:13:08,732 - INFO - Memulai route /upload, upload & encrypt | CPU: 3.10% | RAM: 6052.78 MB
+2025-01-24 09:13:09,146 - INFO - Nama file baru yang dihasilkan: fileTXT-size100mbfAxTGrh.txt
+2025-01-24 09:13:09,147 - INFO - Ukuran file pengguna sebelum enkripsi: 104857600 bytes
+2025-01-24 09:13:09,148 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:13:09,194 - INFO - Melakukan enkripsi AES
+2025-01-24 09:13:09,546 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:13:09,830 - INFO - File terenkripsi disimpan di: uploads\fileTXT-size100mbfAxTGrh.txt
+2025-01-24 09:13:09,831 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:13:09,930 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:13:09,931 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:13:09,932 - INFO - Melakukan hash pada password...
+2025-01-24 09:13:09,932 - DEBUG - Password berhasil di-hash
+2025-01-24 09:13:09,932 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:13:09,932 - INFO - Melakukan enkripsi AES
+2025-01-24 09:13:09,933 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:13:09,937 - INFO - File .key terenkripsi disimpan di: uploads\fileTXT-size100mbfAxTGrh.txt.key
+2025-01-24 09:13:09,939 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 1.215824 detik
+2025-01-24 09:13:09,946 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 6.10% | RAM: 6214.91 MB
+2025-01-24 09:13:09,968 - INFO - 127.0.0.1 - - [24/Jan/2025 09:13:09] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:13:09,975 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:13:09,976 - INFO - 127.0.0.1 - - [24/Jan/2025 09:13:09] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:13:18,942 - INFO - Mengunduh private key...
+2025-01-24 09:13:18,943 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:13:18,966 - INFO - 127.0.0.1 - - [24/Jan/2025 09:13:18] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:13:20,272 - INFO - Mengakses halaman utama.
+2025-01-24 09:13:20,274 - INFO - 127.0.0.1 - - [24/Jan/2025 09:13:20] "GET / HTTP/1.1" 200 -
+2025-01-24 09:13:20,285 - INFO - 127.0.0.1 - - [24/Jan/2025 09:13:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:13:36,063 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6052.54 MB
+2025-01-24 09:13:36,124 - INFO - Melakukan hash pada password...
+2025-01-24 09:13:36,125 - DEBUG - Password berhasil di-hash
+2025-01-24 09:13:36,137 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:13:36,137 - INFO - Melakukan dekripsi AES
+2025-01-24 09:13:36,138 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:13:36,138 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:13:36,140 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:13:36,141 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:13:36,197 - INFO - Ukuran file pengguna sebelum dekripsi: 104857616 bytes
+2025-01-24 09:13:36,198 - INFO - Melakukan dekripsi AES
+2025-01-24 09:13:36,541 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:13:36,542 - INFO - /download selesai. Waktu yang dibutuhkan: 0.484639 detik
+2025-01-24 09:13:36,549 - INFO - decrypt & download sukses, route /download selesai | CPU: 8.50% | RAM: 6261.26 MB
+2025-01-24 09:13:36,558 - INFO - 127.0.0.1 - - [24/Jan/2025 09:13:36] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:13:51,292 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6057.74 MB
+2025-01-24 09:13:51,298 - INFO - Nama file baru yang dihasilkan: fileZIP-size1mbb7QaHDa.zip
+2025-01-24 09:13:51,299 - INFO - Ukuran file pengguna sebelum enkripsi: 1048576 bytes
+2025-01-24 09:13:51,299 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:13:51,301 - INFO - Melakukan enkripsi AES
+2025-01-24 09:13:51,305 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:13:51,308 - INFO - File terenkripsi disimpan di: uploads\fileZIP-size1mbb7QaHDa.zip
+2025-01-24 09:13:51,308 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:13:51,452 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:13:51,453 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:13:51,454 - INFO - Melakukan hash pada password...
+2025-01-24 09:13:51,454 - DEBUG - Password berhasil di-hash
+2025-01-24 09:13:51,454 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:13:51,455 - INFO - Melakukan enkripsi AES
+2025-01-24 09:13:51,455 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:13:51,456 - INFO - File .key terenkripsi disimpan di: uploads\fileZIP-size1mbb7QaHDa.zip.key
+2025-01-24 09:13:51,457 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.172230 detik
+2025-01-24 09:13:51,464 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 7.00% | RAM: 6055.58 MB
+2025-01-24 09:13:51,467 - INFO - 127.0.0.1 - - [24/Jan/2025 09:13:51] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:13:51,475 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:13:51,476 - INFO - 127.0.0.1 - - [24/Jan/2025 09:13:51] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:13:54,961 - INFO - Mengunduh private key...
+2025-01-24 09:13:54,962 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:13:54,979 - INFO - 127.0.0.1 - - [24/Jan/2025 09:13:54] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:13:56,401 - INFO - Mengakses halaman utama.
+2025-01-24 09:13:56,402 - INFO - 127.0.0.1 - - [24/Jan/2025 09:13:56] "GET / HTTP/1.1" 200 -
+2025-01-24 09:13:56,427 - INFO - 127.0.0.1 - - [24/Jan/2025 09:13:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:14:15,269 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6056.55 MB
+2025-01-24 09:14:15,341 - INFO - Melakukan hash pada password...
+2025-01-24 09:14:15,342 - DEBUG - Password berhasil di-hash
+2025-01-24 09:14:15,355 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:14:15,355 - INFO - Melakukan dekripsi AES
+2025-01-24 09:14:15,356 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:14:15,356 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:14:15,359 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:14:15,359 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:14:15,361 - INFO - Ukuran file pengguna sebelum dekripsi: 1048592 bytes
+2025-01-24 09:14:15,361 - INFO - Melakukan dekripsi AES
+2025-01-24 09:14:15,366 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:14:15,367 - INFO - /download selesai. Waktu yang dibutuhkan: 0.105052 detik
+2025-01-24 09:14:15,372 - INFO - decrypt & download sukses, route /download selesai | CPU: 12.10% | RAM: 6057.59 MB
+2025-01-24 09:14:15,374 - INFO - 127.0.0.1 - - [24/Jan/2025 09:14:15] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:14:44,501 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6037.34 MB
+2025-01-24 09:14:44,518 - INFO - Nama file baru yang dihasilkan: fileZIP-size5mbJILB3dn.zip
+2025-01-24 09:14:44,519 - INFO - Ukuran file pengguna sebelum enkripsi: 5242880 bytes
+2025-01-24 09:14:44,520 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:14:44,523 - INFO - Melakukan enkripsi AES
+2025-01-24 09:14:44,539 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:14:44,548 - INFO - File terenkripsi disimpan di: uploads\fileZIP-size5mbJILB3dn.zip
+2025-01-24 09:14:44,549 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:14:44,612 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:14:44,613 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:14:44,616 - INFO - Melakukan hash pada password...
+2025-01-24 09:14:44,616 - DEBUG - Password berhasil di-hash
+2025-01-24 09:14:44,616 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:14:44,616 - INFO - Melakukan enkripsi AES
+2025-01-24 09:14:44,617 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:14:44,618 - INFO - File .key terenkripsi disimpan di: uploads\fileZIP-size5mbJILB3dn.zip.key
+2025-01-24 09:14:44,619 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.127842 detik
+2025-01-24 09:14:44,625 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 8.80% | RAM: 6058.68 MB
+2025-01-24 09:14:44,631 - INFO - 127.0.0.1 - - [24/Jan/2025 09:14:44] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:14:44,637 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:14:44,638 - INFO - 127.0.0.1 - - [24/Jan/2025 09:14:44] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:14:53,543 - INFO - Mengunduh private key...
+2025-01-24 09:14:53,544 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:14:53,561 - INFO - 127.0.0.1 - - [24/Jan/2025 09:14:53] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:15:07,822 - INFO - Mengunduh private key...
+2025-01-24 09:15:07,825 - INFO - 127.0.0.1 - - [24/Jan/2025 09:15:07] "[32mPOST /download_key HTTP/1.1[0m" 302 -
+2025-01-24 09:15:07,835 - INFO - Mengakses halaman utama.
+2025-01-24 09:15:07,837 - INFO - 127.0.0.1 - - [24/Jan/2025 09:15:07] "GET / HTTP/1.1" 200 -
+2025-01-24 09:15:07,854 - INFO - 127.0.0.1 - - [24/Jan/2025 09:15:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:15:20,714 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6048.50 MB
+2025-01-24 09:15:20,780 - INFO - Melakukan hash pada password...
+2025-01-24 09:15:20,780 - DEBUG - Password berhasil di-hash
+2025-01-24 09:15:20,792 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:15:20,792 - INFO - Melakukan dekripsi AES
+2025-01-24 09:15:20,793 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:15:20,793 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:15:20,795 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:15:20,796 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:15:20,798 - INFO - Ukuran file pengguna sebelum dekripsi: 5242896 bytes
+2025-01-24 09:15:20,799 - INFO - Melakukan dekripsi AES
+2025-01-24 09:15:20,816 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:15:20,817 - INFO - /download selesai. Waktu yang dibutuhkan: 0.109321 detik
+2025-01-24 09:15:20,822 - INFO - decrypt & download sukses, route /download selesai | CPU: 9.40% | RAM: 6057.38 MB
+2025-01-24 09:15:20,825 - INFO - 127.0.0.1 - - [24/Jan/2025 09:15:20] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:15:36,361 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6043.45 MB
+2025-01-24 09:15:36,392 - INFO - Nama file baru yang dihasilkan: fileZIP-size10mbUBHdBv8.zip
+2025-01-24 09:15:36,393 - INFO - Ukuran file pengguna sebelum enkripsi: 10485760 bytes
+2025-01-24 09:15:36,393 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:15:36,398 - INFO - Melakukan enkripsi AES
+2025-01-24 09:15:36,430 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:15:36,439 - INFO - File terenkripsi disimpan di: uploads\fileZIP-size10mbUBHdBv8.zip
+2025-01-24 09:15:36,440 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:15:36,591 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:15:36,592 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:15:36,592 - INFO - Melakukan hash pada password...
+2025-01-24 09:15:36,592 - DEBUG - Password berhasil di-hash
+2025-01-24 09:15:36,593 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:15:36,593 - INFO - Melakukan enkripsi AES
+2025-01-24 09:15:36,593 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:15:36,595 - INFO - File .key terenkripsi disimpan di: uploads\fileZIP-size10mbUBHdBv8.zip.key
+2025-01-24 09:15:36,595 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 0.241408 detik
+2025-01-24 09:15:36,602 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 9.30% | RAM: 6074.09 MB
+2025-01-24 09:15:36,608 - INFO - 127.0.0.1 - - [24/Jan/2025 09:15:36] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:15:36,614 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:15:36,615 - INFO - 127.0.0.1 - - [24/Jan/2025 09:15:36] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:15:40,315 - INFO - Mengunduh private key...
+2025-01-24 09:15:40,316 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:15:40,334 - INFO - 127.0.0.1 - - [24/Jan/2025 09:15:40] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:15:47,681 - INFO - Mengunduh private key...
+2025-01-24 09:15:47,688 - INFO - 127.0.0.1 - - [24/Jan/2025 09:15:47] "[32mPOST /download_key HTTP/1.1[0m" 302 -
+2025-01-24 09:15:47,701 - INFO - Mengakses halaman utama.
+2025-01-24 09:15:47,702 - INFO - 127.0.0.1 - - [24/Jan/2025 09:15:47] "GET / HTTP/1.1" 200 -
+2025-01-24 09:15:47,726 - INFO - 127.0.0.1 - - [24/Jan/2025 09:15:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:16:06,787 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6047.96 MB
+2025-01-24 09:16:06,847 - INFO - Melakukan hash pada password...
+2025-01-24 09:16:06,848 - DEBUG - Password berhasil di-hash
+2025-01-24 09:16:06,859 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:16:06,860 - INFO - Melakukan dekripsi AES
+2025-01-24 09:16:06,860 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:16:06,861 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:16:06,863 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:16:06,863 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:16:06,870 - INFO - Ukuran file pengguna sebelum dekripsi: 10485776 bytes
+2025-01-24 09:16:06,870 - INFO - Melakukan dekripsi AES
+2025-01-24 09:16:06,904 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:16:06,905 - INFO - /download selesai. Waktu yang dibutuhkan: 0.123592 detik
+2025-01-24 09:16:06,911 - INFO - decrypt & download sukses, route /download selesai | CPU: 6.20% | RAM: 6066.59 MB
+2025-01-24 09:16:06,914 - INFO - 127.0.0.1 - - [24/Jan/2025 09:16:06] "POST /download HTTP/1.1" 200 -
+2025-01-24 09:16:20,787 - INFO - Memulai route /upload, upload & encrypt | CPU: 0.00% | RAM: 6052.81 MB
+2025-01-24 09:16:21,069 - INFO - Nama file baru yang dihasilkan: fileZIP-size100mbHkAMsUK.zip
+2025-01-24 09:16:21,069 - INFO - Ukuran file pengguna sebelum enkripsi: 104857600 bytes
+2025-01-24 09:16:21,070 - INFO - Memulai enkripsi file pengguna menggunakan AES...
+2025-01-24 09:16:21,112 - INFO - Melakukan enkripsi AES
+2025-01-24 09:16:21,423 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:16:21,724 - INFO - File terenkripsi disimpan di: uploads\fileZIP-size100mbHkAMsUK.zip
+2025-01-24 09:16:21,725 - INFO - Membuat pasangan kunci RSA baru...
+2025-01-24 09:16:21,877 - INFO - Melakukan enkripsi RSA untuk secret key...
+2025-01-24 09:16:21,878 - DEBUG - Enkripsi RSA selesai.
+2025-01-24 09:16:21,879 - INFO - Melakukan hash pada password...
+2025-01-24 09:16:21,879 - DEBUG - Password berhasil di-hash
+2025-01-24 09:16:21,880 - INFO - Memulai enkripsi data kunci (.key) menggunakan AES...
+2025-01-24 09:16:21,880 - INFO - Melakukan enkripsi AES
+2025-01-24 09:16:21,880 - DEBUG - Enkripsi AES selesai.
+2025-01-24 09:16:21,894 - INFO - File .key terenkripsi disimpan di: uploads\fileZIP-size100mbHkAMsUK.zip.key
+2025-01-24 09:16:21,895 - INFO - File berhasil di-upload dan terenkripsi. Waktu yang dibutuhkan: 1.117078 detik
+2025-01-24 09:16:21,902 - INFO - upload dan enkripsi selesai, route /upload berhasil | CPU: 5.20% | RAM: 6248.71 MB
+2025-01-24 09:16:21,926 - INFO - 127.0.0.1 - - [24/Jan/2025 09:16:21] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-24 09:16:21,932 - INFO - Menampilkan halaman sukses.
+2025-01-24 09:16:21,934 - INFO - 127.0.0.1 - - [24/Jan/2025 09:16:21] "GET /success HTTP/1.1" 200 -
+2025-01-24 09:16:27,054 - INFO - Mengunduh private key...
+2025-01-24 09:16:27,054 - INFO - Private key ditemukan, mengirimkan file
+2025-01-24 09:16:27,076 - INFO - 127.0.0.1 - - [24/Jan/2025 09:16:27] "POST /download_key HTTP/1.1" 200 -
+2025-01-24 09:16:28,643 - INFO - Mengakses halaman utama.
+2025-01-24 09:16:28,644 - INFO - 127.0.0.1 - - [24/Jan/2025 09:16:28] "GET / HTTP/1.1" 200 -
+2025-01-24 09:16:28,658 - INFO - 127.0.0.1 - - [24/Jan/2025 09:16:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-24 09:16:42,296 - INFO - Memulai route /download, decrypt & download | CPU: 0.00% | RAM: 6071.66 MB
+2025-01-24 09:16:42,357 - INFO - Melakukan hash pada password...
+2025-01-24 09:16:42,358 - DEBUG - Password berhasil di-hash
+2025-01-24 09:16:42,371 - INFO - Memulai dekripsi file .key menggunakan AES...
+2025-01-24 09:16:42,371 - INFO - Melakukan dekripsi AES
+2025-01-24 09:16:42,372 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:16:42,372 - INFO - Melakukan dekripsi RSA untuk secret key...
+2025-01-24 09:16:42,374 - DEBUG - Dekripsi RSA selesai.
+2025-01-24 09:16:42,374 - INFO - Memulai dekripsi file pengguna menggunakan AES...
+2025-01-24 09:16:42,419 - INFO - Ukuran file pengguna sebelum dekripsi: 104857616 bytes
+2025-01-24 09:16:42,419 - INFO - Melakukan dekripsi AES
+2025-01-24 09:16:42,735 - DEBUG - Dekripsi AES selesai.
+2025-01-24 09:16:42,735 - INFO - /download selesai. Waktu yang dibutuhkan: 0.446180 detik
+2025-01-24 09:16:42,742 - INFO - decrypt & download sukses, route /download selesai | CPU: 9.50% | RAM: 6273.40 MB
+2025-01-24 09:16:42,755 - INFO - 127.0.0.1 - - [24/Jan/2025 09:16:42] "POST /download HTTP/1.1" 200 -
